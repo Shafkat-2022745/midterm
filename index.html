@@ -16,7 +16,7 @@ lang="en">
     <div class="top-bar">
       <a href="#">Home</a>
       <a href="https://drive.google.com/file/d/1pM9dnjdOB6PxZHFNU9IhWvcn1lU7W6-M/view?usp=drive_link">CV</a>
-      <a href="file:///F:/Html%20and%20css/midterm/project.html">Projects</a>
+      <a href="project.html">Projects</a>
       <form action="#" method="get" id="searchForm">
         <input type="search" placeholder="Search..." id="searchInput" oninput="searchRedirect()">
       </form>
@@ -59,7 +59,7 @@ lang="en">
       if (searchInput === 'cv') {
         searchForm.action = 'https://drive.google.com/file/d/1pM9dnjdOB6PxZHFNU9IhWvcn1lU7W6-M/view?usp=drive_link';
       } else if (searchInput === 'projects') {
-        searchForm.action = 'file:///F:/Html%20and%20css/midterm/project.html';
+        searchForm.action = 'project.html';
       } else {
         searchForm.action = '#'; 
       }
