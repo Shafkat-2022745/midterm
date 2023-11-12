@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html
+lang="en">
+<head>
+ <meta
+ charset="UTF-8">
+ <meta
+ name="viewport"
+ content="width=device-width, initial-scale=1.0">
+ <title>Shafkat Muhib</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <a href="#">Home</a>
+      <a href="https://drive.google.com/file/d/1pM9dnjdOB6PxZHFNU9IhWvcn1lU7W6-M/view?usp=drive_link">CV</a>
+      <a href="file:///F:/Html%20and%20css/midterm/project.html">Projects</a>
+      <form action="#" method="get" id="searchForm">
+        <input type="search" placeholder="Search..." id="searchInput" oninput="searchRedirect()">
+      </form>
+    </div>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Shafkat Muhib</h1>
+      <div class="lot">
+        <img src="Shafkat.png" alt="Shafkat Muhib">
+      </div>
+      <p>University: Independent University Bangladesh</p>
+      <p>Major: Computer Science and Engineering</p>
+      <p>Semester: 11</p>
+      <p>Welcome to my Web Hub!
+         Explore the world of SQL, databases, networking, and blockchain with me. Dive into the power of data and efficient information management through SQL and databases. Understand the intricacies of networking, unraveling the secrets behind seamless communication. Step into the future with blockchain technology, disrupting industries and redefining trust in the digital world.
+         Whether you're a pro or just curious, this space is for you. Join me on a simple journey through the essentials of SQL, databases, networking, and blockchain. Let's explore the digital landscape together at my Web Hub!</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footertop">
+        <section class="fimage">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="https://www.facebook.com/profile.php?id=100009310561784" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            
+            
+        </section>
+        <p>Stay connected</p>
+    </section>
+  </footer>
+
+  <script>
+    function searchRedirect() {
+      const searchInput = document.getElementById('searchInput').value.toLowerCase();
+      const searchForm = document.getElementById('searchForm');
+
+      if (searchInput === 'cv') {
+        searchForm.action = 'https://drive.google.com/file/d/1pM9dnjdOB6PxZHFNU9IhWvcn1lU7W6-M/view?usp=drive_link';
+      } else if (searchInput === 'projects') {
+        searchForm.action = 'file:///F:/Html%20and%20css/midterm/project.html';
+      } else {
+        searchForm.action = '#'; 
+      }
+    }
+  </script>
+
+
+</body>
+</html>

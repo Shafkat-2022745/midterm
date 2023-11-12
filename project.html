@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html
+ lang="en">
+ <head>
+  <meta
+  charset="UTF-8">
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="pro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+  <body>
+   <header>
+     <div class="top-bar">
+      <a href="file:///F:/Html%20and%20css/midterm/CSE309mid.html">Home</a>
+      <a href="https://drive.google.com/file/d/1pM9dnjdOB6PxZHFNU9IhWvcn1lU7W6-M/view?usp=drive_link">CV</a>
+      <form action="#" method="get" id="searchForm">
+        <input type="search" placeholder="Search..." id="searchInput" oninput="searchRedirect()">
+      </form>
+     </div>
+   </header>
+   <section class="micro">
+    <h3>IoT based Sweat Analyzer To Detarmine Health Condition</h3>
+      <p>The Sweat Analyzer Project stands as an innovative endeavor poised to transform personal health monitoring by precisely measuring chloride percentages in sweat.
+        Utilizing state-of-the-art sensor technology, this device furnishes users with a comprehensive insight into their chloride levels, fostering a more informed approach to health and well-being.
+        At its core, the project integrates a user-friendly LCD display, ensuring that individuals can effortlessly interpret and access real-time results.
+        This display not only provides convenience but also facilitates instant decision-making regarding hydration and electrolyte balance.
+        The standout feature of the Sweat Analyzer lies in its versatility, catering to the needs of fitness enthusiasts, athletes,
+        and individuals with specific medical conditions requiring continuous monitoring of chloride levels.
+        To guarantee accuracy, the project incorporates advanced sensors that yield precise measurements, bolstering the reliability of the device.
+        The LCD display not only presents immediate results but also archives historical data, empowering users to track trends and fluctuations in their chloride levels over time.
+        The emphasis on portability makes the Sweat Analyzer a convenient and travel-friendly solution, enabling users to take charge of their health wherever they go.
+        In essence, this project marks a significant leap forward in personalized health technology, delivering a practical tool for proactive health management.
+      </p>
+   </section>
+
+   <section class="microimg">
+    <img src="micro.jpg" alt="Image1">
+    <img src="micro1.png" alt="Image2">
+   </section>  
+
+   <section class="button">
+    <a href="https://docs.google.com/document/d/1Wr3hLX4yWbLmmON6-OjHOPJDtsdewyXvzuzm4D4ILMM/edit?usp=sharing" class="button-link">Show Report</a>
+   </section>
+
+   <section class="java">
+    <h3>Star Paper Mill</h3>
+    <p>
+      In the ever-evolving landscape of industrial management, efficient and streamlined processes are paramount to success. The Java-based Star Paper Mill Management System stands as a testament to this principle,
+      offering a comprehensive solution tailored for the unique needs of Star Paper Mill.
+This project unfolds as a sophisticated software application designed to enhance the operational efficiency of Star Paper Mill by focusing on the intricacies of user-specific goals. With a user-centric approach,
+the system accommodates two distinct user roles, each entrusted with the responsibility of overseeing and accomplishing a set of eight specific goals.
+The primary objective of this project is to provide a centralized platform where users, representing different facets of Star Paper Mill operations, can seamlessly collaborate and monitor their respective goals.
+Leveraging Java's versatility, the system not only ensures a user-friendly interface but also integrates robust functionality to facilitate goal tracking, progress assessment, and dynamic adjustments.
+By dividing the users into two distinct roles, the system recognizes the diverse responsibilities within the Star Paper Mill ecosystem. Each user, equipped with the tools and resources pertinent to their role,
+gains access to a personalized dashboard highlighting their eight designated goals.
+The project, through its modular design and meticulous attention to user experience, aims to elevate the efficiency and transparency of goal management within the Star Paper Mill framework.
+As we delve deeper into the intricacies of this Java project, it becomes evident that the Star Paper Mill Management System is more than just a software application—it is a strategic ally in the pursuit of operational excellence
+and goal attainment for one of the key players in the paper manufacturing industry.
+    </p>
+  </section>
+  <section class="javaimg">
+    <img src="java1.png" alt="Image3">
+    <img src="java2.png" alt="Image4">
+   </section>
+     
+   <footer class="footer">
+    <section class="footertop">
+        <section class="fimage">
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="https://www.facebook.com/profile.php?id=100009310561784" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            
+            
+        </section>
+        <p>Stay connected</p>
+    </section>
+        
+
+   </footer>
+  
+   <script>
+    function searchRedirect() {
+      const searchInput = document.getElementById('searchInput').value.toLowerCase();
+      const searchForm = document.getElementById('searchForm');
+
+      if (searchInput === 'cv') {
+        searchForm.action = 'https://drive.google.com/file/d/1pM9dnjdOB6PxZHFNU9IhWvcn1lU7W6-M/view?usp=drive_link';
+      } else if (searchInput === 'home') {
+        searchForm.action = 'file:///F:/Html%20and%20css/midterm/CSE309mid.html';
+      } else {
+        searchForm.action = '#'; 
+      }
+    }
+  </script>
+
+ </body>  
+</html>
